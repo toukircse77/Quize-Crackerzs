@@ -16,7 +16,6 @@ const Header = () => {
              </div>
              <ul className={ `md:flex w-full bg-blue-500  md:static justify-center duration-500 ease-in  absolute ${open ? 'top-8' : 'top-[-240px]'}` }>
                 <li className='mr-10 p-1'><NavLink className={({isActive})=> isActive ? 'active' : 'undefined'} to={'/home'}>Home</NavLink></li>
-                <li className='mr-10 p-1'><NavLink  to={'/topic'}>Topic</NavLink></li>
                 <li className='mr-10 p-1'><NavLink to={'/statistics'}>Statistics</NavLink></li>
                 <li className='mr-10 p-1'><NavLink to={'/blog'}>Blog</NavLink></li>
              </ul>

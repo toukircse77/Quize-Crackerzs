@@ -4,6 +4,7 @@ import './App.css';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import Home from './components/Home/Home';
 import HomeDetails from './components/HomeDetails/HomeDetails';
+import Statistics from './components/Statistics/Statistics';
 import Route from './LayOut/Route';
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
           },
           element:<HomeDetails></HomeDetails>
+        },
+        {
+          path:'statistics',
+          element:<Statistics />
         }
       ]
     }

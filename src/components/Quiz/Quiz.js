@@ -1,14 +1,15 @@
 import React from 'react';
+import './Quiz.css'
 
 const Quiz = ({questions}) => {
     const {options, question} = questions;
     console.log(options)
     return (
-        <div>
-            <h1>Quiz: {question}</h1>
-            <div className='grid grid-rows-2 grid-flow-col gap-3'>
+        <div className='quiz-wrapper'>
+            <h1  className='text-2xl' >Quiz: {question}</h1>
+            <div className='flex flex-col items-center option'>
                 {
-                    options.map(option=><li>{option}</li>)
+                    options.map(option=><p className='option-list'>{option}</p>)
                 }
 
             </div>

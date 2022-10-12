@@ -21,7 +21,7 @@ const Home = () => {
 </div>
             </div>
             </div>
-            <div className='home-container'>
+            <div className='grid grid-cols-1 md:grid-cols-4'>
         
                 {
                     data.map(items=><Cart key={items.id} items={items}></Cart>)

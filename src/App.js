@@ -50,6 +50,9 @@ function App() {
         },
         {
           path:'topics',
+          loader: ()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element:<Topic></Topic>
         }
       ]

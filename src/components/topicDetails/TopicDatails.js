@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Cart = ({items}) => {
-    const {name,logo,total,id} =items;
+const TopicDatails = ({topic}) => {
+ const {name,logo,total,id} = topic;
     return (
-        <div>
-           <div className="card w-50 m-5 bg-uw shadow-xl">
+        <div className=' '>
+            <div className="card w-50 m-5 bg-uw shadow-xl">
                 <figure className='bg-yellow-400 rounded-sm'><img src= {logo} /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
@@ -19,4 +19,4 @@ const Cart = ({items}) => {
     );
 };
 
-export default Cart;
+export default TopicDatails;

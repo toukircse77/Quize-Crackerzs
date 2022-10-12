@@ -1,8 +1,0 @@
-
-.home-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
-    padding: 20px;
-    gap: 10px;
-}

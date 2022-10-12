@@ -1,12 +1,8 @@
-.background-image{
-    background-image: url('https://img.freepik.com/free-vector/wave-background-illustration-vector-design_343694-1481.jpg?w=826&t=st=1665468828~exp=1665469428~hmac=bcd12ab52cb29b376d8d68300cda3afd55216644a859fdccab2e43e6a67db5ed');
-    height: 20vh;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-}
 .home-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    padding: 20px;
+    gap: 10px;
 }
